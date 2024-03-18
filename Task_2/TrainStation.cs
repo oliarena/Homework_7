@@ -34,7 +34,7 @@
             }
         }
 
-        public static void SortTrainsByNumber(Train[] trains)
+        public static void SortTrainsByNumber(Train[] trains) //Сортування можно було зробити на багато лешче через метод CompareTo
         {
             int n = trains.Length;
             for (int i = 0; i < n - 1; i++)
