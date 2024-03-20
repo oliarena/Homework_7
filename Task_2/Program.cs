@@ -7,7 +7,7 @@
             Train[] trains = new Train[8];
             TrainStation.AddTrains(trains);
             TrainStation.PrintTrains(trains);
-            TrainStation.SortTrainsByNumber(trains);
+            Array.Sort(trains);                   // Зроблено. 
             Console.WriteLine("Sorted trains: ");
             TrainStation.PrintTrains(trains);
 

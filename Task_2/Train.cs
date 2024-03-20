@@ -1,6 +1,6 @@
 ﻿namespace Task_2
 {
-    internal struct Train
+    internal struct Train : IComparable<Train>
     {
         string destination;
         int number;
@@ -31,6 +31,11 @@
         public void PrintInfo()
         { 
             Console.WriteLine($"Num: {number}. Destination: {destination}. Depart Time: {depart:t}");     
+        }
+
+        public int CompareTo(Train other)
+        {
+            return number.CompareTo(other.number);
         }
     }    
 }

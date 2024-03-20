@@ -1,4 +1,6 @@
-﻿namespace Task_2
+﻿using System.Collections.Immutable;
+
+namespace Task_2
 {
     internal static class TrainStation
     {
@@ -31,21 +33,6 @@
                 }
 
                 trains[i] = new Train(destination, number, depart);
-            }
-        }
-
-        public static void SortTrainsByNumber(Train[] trains) //Сортування можно було зробити на багато лешче через метод CompareTo
-        {
-            int n = trains.Length;
-            for (int i = 0; i < n - 1; i++)
-            {
-                for (int j = 0; j < n - i - 1; j++)
-                {
-                    if (trains[j].Number > trains[j + 1].Number)
-                    {
-                        (trains[j + 1], trains[j]) = (trains[j], trains[j + 1]);
-                    }
-                }
             }
         }
 
